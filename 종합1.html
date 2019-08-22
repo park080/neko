@@ -7,11 +7,46 @@
     <meta charset="utf-8">
   </head>
     <body>
-      <h1><a href="index.html" title="목차안내">웹 프로그래밍 공부하기</a></h1>
+      <h1><a href="index.html" title="목차안내">웹 프로그래밍 공부하기</a>
+        <!--<input type="button" value="주간모드" onclick="
+        document.querySelector('body').style.backgroundColor='#eeeeee';
+        document.querySelector('body').style.color='black';
+        ">
+        <input type="button" value="야간모드" onclick="
+        document.querySelector('body').style.backgroundColor='#333333';
+        document.querySelector('body').style.color='white';
+        ">-->
+        <input type="button" value="야간모드" onclick="
+        var target = document.querySelector('body');
+          if(this.value==='야간모드'){
+            target.style.backgroundColor='#333333';
+            target.style.color='white';
+            this.value='주간모드';
+        var alist = document.querySelectorAll('a');
+        var i=0
+            while(i<alist.length){
+              alist[i].style.color='powderblue';
+              i=i+1
+            }
+          } else {
+            target.style.backgroundColor='#eeeeee';
+            target.style.color='black';
+            this.value='야간모드';
+        var alist = document.querySelectorAll('a')
+        var i=0
+            while(i<alist.length){
+              alist[i].style.color='blue';
+              i=i+1;
+            }
+          }
+        ">
+        <!--document.querySelector('#야간_주간').value==='야간모드') 스스로를 가르키는 조건문이기때문에 this.value로 대체할수있다-->
+        <!--document.querySelector('body')가 중복되기에 var ??? = document.querySelector('body')로 대체한후 ???으로 바꾸면 중복을 없앨수있다.-->
+      </h1>
       <div id=qqq>
         <div>
           <ol>
-            <li><a href="종합1.html" title="에디터 추천" style="color:blue">자신에게 맞는 에디터 찾기</a></li>
+            <li><a href="종합1.html" title="에디터 추천">자신에게 맞는 에디터 찾기</a></li>
             <li><a href="종합2.html" title="시작 전 주의사항">시작하기에 앞서</a></li>
             <li><a href="종합3.html" title="태그 정리">태그정리</a></li>
           </ol>

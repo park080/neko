@@ -2,7 +2,7 @@
 border-right:1px solid black;
 display:grid;
 grid-template-columns: 420px 1fr;
-}
+                                    }
 #qqq ol{
 font-size:24px;
 border-right:1px solid black;
@@ -10,44 +10,53 @@ margin:0px 0px 0px 20px;
 padding:20px 0px 20px 20px;
 display:inline=flex;
 width:400px;
-}
+                                    }
 
 body{background: #eeeeee}
 a{
-color:black;
-}
+color:blue;
+    }
 ul{
 list-style-type:circle;
 border-left:1px solid black; margin-left:20px; padding-left:20px
-}
+    }
 li{
 margin-left:20px;
-}
+    }
 h1{
 text-align:center;
 border-bottom:1px solid black;
 margin:0px;
 padding:20px;
-}
+font-size:50px;
+    }
 body{
   margin:0px;
-}
+      }
 @media(max-width:900px){
-#qqq{
-display:block;
-border-right:none;
-}
-div{
-  display:block;
-}
-#qqq ol{
-  display:block;
-  border-right:none;
-}
-ul{
-  border-left:none;
-}
-h1{
-  border-bottom:none;
-}
-}
+                        #qqq{
+                              display:block;
+                              border-right:none;
+                              }
+                        div{
+                          display:block;
+                              }
+                        #qqq ol{
+                                display:block;
+                                border-right:none;
+                                  }
+                        ul{
+                            border-left:none;
+                            }
+                        h1{
+                            border-bottom:none;
+                            }
+                                                            }
+@media print and(black){
+                              #qqq{
+                                    border-right:1px solid white;
+                                    }
+                              #qqq ol{
+                                      border-right:1px solid white;
+                                        }
+                                }

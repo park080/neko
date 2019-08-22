@@ -7,13 +7,49 @@
     <meta charset="utf-8">
   </head>
     <body>
-      <h1><a href="index.html" title="목차안내">웹 프로그래밍 공부하기</a></h1>
+      <h1><a href="index.html" title="목차안내">웹 프로그래밍 공부하기</a>
+        <!--<input type="button" value="주간모드" onclick="
+        document.querySelector('body').style.backgroundColor='#eeeeee';
+        document.querySelector('body').style.color='black';
+        ">
+        <input type="button" value="야간모드" onclick="
+        document.querySelector('body').style.backgroundColor='#333333';
+        document.querySelector('body').style.color='white';
+        ">-->
+        <input type="button" value="야간모드" onclick="
+        var target = document.querySelector('body');
+          if(this.value==='야간모드'){
+            target.style.backgroundColor='#333333';
+            target.style.color='white';
+            this.value='주간모드';
+        var alist = document.querySelectorAll('a');
+        var i=0
+            while(i<alist.length){
+              alist[i].style.color='powderblue';
+              i=i+1
+            }
+          } else {
+            target.style.backgroundColor='#eeeeee';
+            target.style.color='black';
+            this.value='야간모드';
+        var alist = document.querySelectorAll('a')
+        var i=0
+            while(i<alist.length){
+              alist[i].style.color='blue';
+              i=i+1;
+            }
+          }
+        ">
+        <!--document.querySelector('#야간_주간').value==='야간모드') 스스로를 가르키는 조건문이기때문에 this.value로 대체할수있다-->
+        <!--document.querySelector('body')가 중복되기에 var ??? = document.querySelector('body')로 대체한후 ???으로 바꾸면 중복을 없앨수있다.-->
+      </h1>
+
       <div id=qqq>
         <div>
           <ol>
             <li><a href="종합1.html" title="에디터 추천">자신에게 맞는 에디터 찾기</a></li>
             <li><a href="종합2.html" title="시작 전 주의사항">시작하기에 앞서</a></li>
-            <li><a href="종합3.html" title="태그 정리" style="color:blue">태그정리</a></li>
+            <li><a href="종합3.html" title="태그 정리">태그정리</a></li>
           </ol>
         </div>
           <div>
@@ -46,6 +82,10 @@
             <li>속성을 여러개쓸때 ;으로 구분해준다</li>
             <li>/*head에 스타일부분에들어가는 이것은 css의 주석*/<li>
             <li>h1처럼 화면전체의 박스크기를가지는것을 block level element, 자신의 크기만큼만 박스크기를 가지는것을 inline element라고부른다</li>
+            <li>id는 class보다 우선순위가높다. id를나타내는건 #, class를 나타내는건 .</li>
+            <li>head의 style 선택자중 특정그룹을 묶는 id,class,특정태그는 순서대로 영향력이높고, 같은영향력인경우 나중에쓰인것이 우선순위가높다</li>
+            <li>같은 ID선택자는 한번만 등장해야한다</li>
+            <li>head style의 용어정리<br><img src="선택자 정의.png" width=50%></li>
           </ul>
           </div>
       </div>
